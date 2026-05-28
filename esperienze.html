@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ricerca &amp; Sviluppo in Laboratorio - PCTO Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "text-secondary": "#4A4A4A",
+                        "secondary-fixed": "#d8e6dd",
+                        "tertiary-fixed": "#d6e5e9",
+                        "surface-dim": "#dcd9d9",
+                        "tertiary-fixed-dim": "#bac9cd",
+                        "on-primary-fixed-variant": "#51397e",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "outline-variant": "#cbc4d1",
+                        "on-primary-container": "#382064",
+                        "surface-container": "#f0eded",
+                        "inverse-primary": "#d3bbff",
+                        "primary-fixed-dim": "#d3bbff",
+                        "surface-dark": "#0D1B1E",
+                        "surface-container-low": "#f6f3f2",
+                        "outline": "#7b7581",
+                        "on-secondary-container": "#5a6760",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary-fixed": "#101e21",
+                        "primary-container": "#a389d4",
+                        "surface": "#fcf9f8",
+                        "primary-fixed": "#ebddff",
+                        "primary": "#6a5198",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fcf9f8",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#6a5198",
+                        "text-primary": "#1A1A1A",
+                        "secondary-container": "#d8e6dd",
+                        "on-primary": "#ffffff",
+                        "background-secondary": "#E1EFE6",
+                        "tertiary": "#526164",
+                        "on-primary-fixed": "#250750",
+                        "surface-container-high": "#eae7e7",
+                        "secondary": "#54615a",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#3d4a43",
+                        "secondary-fixed-dim": "#bccac1",
+                        "on-secondary-fixed": "#121e19",
+                        "on-background": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#3b494c",
+                        "surface-bright": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "surface-variant": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "accent-purple": "#A389D4",
+                        "tertiary-container": "#8a999d",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#233134",
+                        "background-primary": "#F9F4E8",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#494550"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "margin-page": "40px",
+                        "section-gap": "120px",
+                        "gutter": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-sm sticky top-0 w-full z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-page max-w-container-max mx-auto h-24">
+<div class="font-headline-md text-headline-md text-primary tracking-tight">FSL MAIN EXPERIENCE</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors duration-300" href="index">Archivio</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 active:scale-95 transition-transform duration-200" href="esperienze">Esperienze</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors duration-300" href="competenze">Competenze</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors duration-300" href="riflessioni">Riflessioni</a>
+</div>
+<div class="hidden md:block">
+
+</div>
+<!-- Mobile Menu Icon (simplified for purely visual output) -->
+<button class="md:hidden text-text-secondary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="bg-secondary-fixed pt-section-gap pb-section-gap px-margin-page">
+<div class="max-w-container-max mx-auto">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block uppercase tracking-widest">Esperienza Sul Campo</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-stack-lg">Esperienza alle scuole medie di Villa di Serio</h1>
+<p class="font-body-lg text-body-lg text-text-secondary mb-stack-lg max-w-2xl"><br></p>
+<div class="flex flex-wrap gap-stack-sm mb-stack-lg">
+
+
+
+</div>
+<div class="flex items-center gap-stack-md pt-stack-md border-t border-outline-variant/30">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-text-secondary">Durata</span>
+<span class="font-body-md text-body-md text-on-background font-medium">30 Ore</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-text-secondary">Periodo</span>
+<span class="font-body-md text-body-md text-on-background font-medium">7 - 13 Gen 2025</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-text-secondary">Partner</span>
+<span class="font-body-md text-body-md text-on-background font-medium">Istituto comprensivo F.Nullo di Villa di Serio</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Asymmetric Grid -->
+<section class="py-section-gap px-margin-page max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Sticky Sidebar (Table of Contents concept) -->
+<div class="lg:col-span-3 hidden lg:block">
+<div class="sticky top-40 flex flex-col gap-stack-md border-l border-outline-variant/30 pl-stack-md">
+<a class="font-body-md text-body-md text-primary font-medium hover:text-primary-container transition-colors" href="#metodologia">01. Attività svolte</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="#strumentazione">02. Strumentazione</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="#risultati">03. Riscontro degli studenti</a>
+
+</div>
+</div>
+<!-- Content Area -->
+<div class="lg:col-span-9 flex flex-col gap-section-gap">
+<!-- Metodologia -->
+<div class="scroll-mt-40" id="metodologia">
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-lg flex items-center gap-4">
+<span class="text-primary font-light text-2xl">01.</span>Attività svolte</h2>
+<div class="bg-surface-container rounded-lg p-stack-lg lg:p-[64px] border border-outline-variant/20 shadow-sm relative overflow-hidden">
+<!-- Abstract shape background -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl"></div>
+<p class="font-body-lg text-body-lg text-text-secondary mb-stack-md relative z-10">Ho partecipato come aiuto insegnante, correggendo compiti e aiutando piccoli gruppi di studenti nel recupero di concetto non compresi.</p><div class="">Ho anche avuto occasione di tenere tre lezioni dove ho spiegato degli argomenti nuovi ai ragazzi.</div><p></p>
+
+</div>
+</div>
+<!-- Strumentazione -->
+<div class="scroll-mt-40" id="strumentazione">
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-lg flex items-center gap-4">
+<span class="text-primary font-light text-2xl">02.</span> Strumentazione
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<!-- Tool Card 1 -->
+<div class="bg-background-secondary rounded-lg p-stack-lg flex flex-col justify-between group transition-transform hover:-translate-y-1 duration-300">
+<div>
+
+<h3 class="font-headline-md text-headline-md text-on-background text-2xl mb-stack-sm">Libri di testo</h3>
+<p class="font-body-md text-body-md text-secondary">utilizzati come fonte per le presentazioni alla classe in modotale che potessero seguire al meglio</p>
+</div>
+</div>
+<!-- Tool Card 2 -->
+<div class="bg-surface rounded-lg p-stack-lg border border-outline-variant/30 flex flex-col justify-between group transition-transform hover:-translate-y-1 duration-300">
+<div>
+
+<h3 class="font-headline-md text-headline-md text-on-background text-2xl mb-stack-sm">LIM</h3>
+<p class="font-body-md text-body-md text-text-secondary">Utilizzata per presentare ai ragazzi gli argomenti e per mostrargli delle immagini e video&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Risultati (Bento Grid Style) -->
+<div class="scroll-mt-40" id="risultati">
+<h2 class="font-headline-md text-headline-md text-on-background mb-stack-lg flex items-center gap-4">
+<span class="text-primary font-light text-2xl">03.</span>Riscontro degli studenti</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<!-- Large Highlight Card -->
+<div class="md:col-span-2 bg-inverse-surface text-on-secondary rounded-lg p-stack-lg relative overflow-hidden">
+<h3 class="font-headline-md text-headline-md text-2xl mb-stack-md">Gli studenti</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/80 max-w-md">le classi che ho avuto durante questa settimana di FSL erano molto vivavi ma anche vogliosi di imparare.</p><div class="">I metodi utilizzati sono stati efficaci per l'apprendimento degli studenti nonostante a volte fosse molto difficile avere l'attenzione desiderata.</div><p></p>
+<div class="mt-stack-lg flex items-end">
+
+
+</div>
+</div>
+<!-- Small Stat Card 1 -->
+
+<!-- Small Insight Card -->
+<div class="md:col-span-3 border border-outline-variant/30 rounded-lg p-stack-lg bg-surface flex items-start gap-stack-md">
+
+<div>
+
+
+</div>
+</div>
+</div>
+</div>
+<!-- Galleria / Abstract Illustrations -->
+
+</div>
+</div>
+</section>
+<!-- Next Project Navigation Teaser -->
+<section class="border-t border-outline-variant/30 py-section-gap px-margin-page bg-surface-container-low text-center">
+
+
+
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container full-width mt-section-gap border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-page py-stack-lg flex flex-col md:flex-row justify-between gap-stack-md items-center">
+<div class="font-headline-md text-headline-md text-primary">FSL_ESPERIENZA</div>
+
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</body></html>
