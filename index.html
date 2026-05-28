@@ -1,14 +1,15 @@
-<!DOCTYPE html><html lang="it" style="width: 1280px; height: 2538px; overflow: hidden; position: relative;"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PCTO Portfolio</title>
 <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
@@ -117,40 +118,32 @@
 <!-- TopNavBar -->
 <header class="bg-background/80 backdrop-blur-md dark:bg-surface-dark/80 w-full top-0 sticky z-50 border-b border-outline-variant/30 dark:border-outline/20">
 <div class="flex justify-between items-center w-full px-margin-page py-6 max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md tracking-tight text-on-surface dark:text-surface-bright">FSL Portfolio
-            </div>
-<nav class="hidden md:flex items-center gap-gutter">
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="index">Archivio</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="esperienze">Esperienze</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="competenze">Competenze</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="riflessioni">Riflessioni</a>
-</nav>
+<div class="font-headline-md text-headline-md tracking-tight text-on-surface dark:text-surface-bright">FSL Portfolio</div>
+<nav class="hidden md:flex items-center gap-gutter"><a class="font-body-md text-body-md font-semibold text-text-primary hover:text-primary transition-colors duration-300" href="index">Archivio</a><a class="font-body-md text-body-md font-semibold text-text-primary hover:text-primary transition-colors duration-300" href="esperienze">Esperienze</a><a class="font-body-md text-body-md font-semibold text-text-primary hover:text-primary transition-colors duration-300" href="competenze">Competenze</a><a class="font-body-md text-body-md font-semibold text-text-primary hover:text-primary transition-colors duration-300" href="riflessioni">Riflessioni</a></nav>
 </div>
 </header>
-<main class="w-full max-w-container-max mx-auto px-margin-page flex flex-col gap-section-gap py-section-gap">
-<!-- Hero Section -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center min-h-[614px]"><div class="lg:col-span-6 flex flex-col justify-center gap-stack-lg">
-<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface tracking-tight">
-    Il mio percorso FSL</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Un percorso con una serie di esperienze molto diverse l'una dall'altra, ma allo stesso tempo simili</p>
+<main class="w-full max-w-container-max mx-auto px-margin-page flex flex-col gap-12 py-12 lg:gap-20 lg:py-20">
+<!-- Hero Section (Compact) -->
+<section class="flex flex-col gap-stack-lg max-w-3xl">
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface tracking-tight">Il mio percorso FSL</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Un percorso con una serie di esperienze molto diverse l'una dall'altra, ma allo stesso tempo simili</p>
+</section>
+<!-- Esperienza Principale (Moved Up) -->
+<section class="w-full bg-background-secondary rounded-xl p-margin-page flex gap-gutter items-start max-w-4xl py-16">
+<div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
+<div class="flex flex-col gap-stack-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Esperienza Core</span>
+<h2 class="font-headline-md text-headline-md text-on-secondary-fixed">Esperienza alla scuola media di villa di Serio</h2>
 </div>
-<div class="lg:col-span-6 relative h-[400px] lg:h-[600px] w-full rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30">
-<img alt="Abstract 3D illustration" class="w-full h-full object-cover opacity-80 mix-blend-multiply" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
-</div></section>
-<!-- Esperienza Principale -->
-<section class="w-full bg-background-secondary rounded-xl p-margin-page flex gap-gutter items-start max-w-4xl mx-auto py-24"><div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
-    <div class="flex flex-col gap-stack-md">
-        <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Esperienza Core</span>
-        <h2 class="font-headline-md text-headline-md text-on-secondary-fixed">Esperienza alla scuola media di villa di Serio</h2>
-    </div>
-    <div class="lg:pt-10">
-        <p class="font-body-md text-body-md text-on-secondary-fixed-variant">Progetto di 30 ore dove, affiancata da un tutor, ho partecipato alle lezioni degli studenti come aiuto insegnate&nbsp;</p>
-    </div>
-</div></section>
-<!-- Archivio Esperienze -->
+<div class="lg:pt-10">
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant">Progetto di 30 ore dove, affiancata da un tutor, ho partecipato alle lezioni degli studenti come aiuto insegnate </p>
+</div>
+</div>
+</section>
+<!-- Archivio Esperienze (Moved Up) -->
 <section class="flex flex-col gap-stack-lg">
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-stack-sm">
-<h2 class="font-headline-md text-headline-md text-on-surface">Altre attività svolte&nbsp;</h2>
+<h2 class="font-headline-md text-headline-md text-on-surface">Altre attività svolte </h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Card 1 -->
@@ -174,11 +167,10 @@
 <div class="flex justify-end">
 </div>
 </article>
-<!-- Card 3 -->
 </div>
 </section>
 <!-- Skills Section -->
-<section class="flex flex-col gap-stack-lg pb-section-gap">
+<section class="flex flex-col gap-stack-lg">
 <div class="flex flex-col md:flex-row gap-gutter">
 <div class="flex-1 flex flex-col gap-stack-md">
 <div class="flex flex-wrap gap-stack-sm">
@@ -192,20 +184,11 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-secondary-container dark:bg-surface-container-lowest rounded-t-lg mt-section-gap w-full">
+<footer class="bg-secondary-container dark:bg-surface-container-lowest rounded-t-lg mt-12 w-full">
 <div class="w-full px-margin-page py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md text-on-secondary-container dark:text-on-surface">
-                © 2026 Percorso di alternanza scuola lavoro</div>
+<div class="font-headline-md text-headline-md text-on-secondary-container dark:text-on-surface">© 2026 Percorso di alternanza scuola lavoro</div>
 <nav class="flex flex-wrap items-center justify-center gap-stack-md">
 </nav>
 </div>
 </footer>
-
-
-
-
-
-
-
-
 </body></html>
