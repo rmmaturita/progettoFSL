@@ -1,0 +1,260 @@
+<!DOCTYPE html><html class="light" lang="it" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Analisi Dati Ambientali - PCTO Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#ffdad6",
+                      "background-primary": "#F9F4E8",
+                      "surface": "#fcf9f8",
+                      "on-surface": "#1c1b1b",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#bccac1",
+                      "on-primary-fixed": "#250750",
+                      "primary": "#6a5198",
+                      "surface-dim": "#dcd9d9",
+                      "primary-fixed-dim": "#d3bbff",
+                      "on-error": "#ffffff",
+                      "secondary": "#54615a",
+                      "inverse-surface": "#313030",
+                      "background": "#fcf9f8",
+                      "outline": "#7b7581",
+                      "on-tertiary-fixed": "#101e21",
+                      "tertiary-fixed": "#d6e5e9",
+                      "surface-dark": "#0D1B1E",
+                      "on-primary-fixed-variant": "#51397e",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#bac9cd",
+                      "secondary-container": "#d8e6dd",
+                      "accent-purple": "#A389D4",
+                      "on-tertiary-container": "#233134",
+                      "on-secondary-fixed-variant": "#3d4a43",
+                      "primary-container": "#a389d4",
+                      "background-secondary": "#E1EFE6",
+                      "on-surface-variant": "#494550",
+                      "tertiary": "#526164",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-secondary-fixed": "#121e19",
+                      "text-secondary": "#4A4A4A",
+                      "error": "#ba1a1a",
+                      "text-primary": "#1A1A1A",
+                      "outline-variant": "#cbc4d1",
+                      "on-primary-container": "#382064",
+                      "on-tertiary-fixed-variant": "#3b494c",
+                      "inverse-on-surface": "#f3f0ef",
+                      "surface-container-low": "#f6f3f2",
+                      "surface-container-high": "#eae7e7",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#6a5198",
+                      "on-secondary-container": "#5a6760",
+                      "on-background": "#1c1b1b",
+                      "surface-container": "#f0eded",
+                      "primary-fixed": "#ebddff",
+                      "secondary-fixed": "#d8e6dd",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#fcf9f8",
+                      "tertiary-container": "#8a999d",
+                      "surface-variant": "#e5e2e1",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#d3bbff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "stack-md": "16px",
+                      "margin-page": "40px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "gutter": "32px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>body { background-color: #fcf9f8; }</style>
+<style>body { background-color: #fcf9f8; }</style></head>
+<body class="text-on-surface font-body-md min-h-screen flex flex-col bg-surface">
+<!-- TopNavBar -->
+<nav class="bg-background/80 backdrop-blur-md dark:bg-surface-dark/80 font-headline-md text-headline-md font-body-md text-body-md font-label-caps text-label-caps docked full-width top-0 sticky border-b border-outline-variant/30 dark:border-outline/20 flat no shadows z-50">
+<div class="flex justify-between items-center w-full px-margin-page py-6 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md tracking-tight text-on-surface dark:text-surface-bright font-bold">FSL Riflessioni</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="text-primary dark:text-primary-fixed-dim font-semibold border-b-2 border-primary pb-1" href="index">Archivio</a>
+<a class="text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300" href="esperienze">Esperienze</a>
+<a class="text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300" href="competenze">Competenze</a>
+<a class="text-on-surface-variant dark:text-secondary-fixed-dim hover:text-primary transition-colors dark:hover:text-primary-fixed transition-all duration-300" href="riflessioni">Riflessioni</a>
+</div>
+
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="bg-background-secondary pt-section-gap pb-section-gap px-margin-page rounded-b-xl relative overflow-hidden">
+<!-- Decorative Abstract Shape -->
+<svg class="absolute top-0 right-0 -mr-32 -mt-32 w-[600px] h-[600px] text-primary/5 opacity-50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.7,-57.2C59.9,-46.8,66.8,-29.4,69.5,-11.7C72.2,6,70.7,24.1,61.4,38.3C52.1,52.5,35,62.8,17.2,66.5C-0.6,70.2,-19.1,67.3,-35.1,58.3C-51.1,49.3,-64.5,34.2,-68.8,16.8C-73.1,-0.6,-68.3,-20.3,-57.4,-33.5C-46.5,-46.7,-29.5,-53.4,-13.2,-58C3.1,-62.6,19.4,-65.1,35.5,-67.6Z" fill="currentColor" transform="translate(100 100) scale(1.1)"></path>
+</svg>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10">
+<div class="md:col-span-8 flex flex-col gap-stack-lg">
+<div class="flex gap-stack-sm flex-wrap">
+
+
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Riflessione generale&nbsp;</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Breve riflessione sulle esperienze svolte e le scelte per il mio futuro che mi hanno aiutato a prendere</p>
+</div>
+
+</div>
+</section>
+<!-- Content Section 1: Metodologia -->
+<section class="py-section-gap px-margin-page">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-md">Il mio futuro?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Queste esperienze mi hanno permesso di affrontare il grande dilemma della scelta universitaria.</p>
+</div>
+<div class="md:col-span-8 flex flex-col gap-stack-lg">
+<div class="bg-surface rounded-lg p-stack-lg border border-outline-variant/20 shadow-sm flex gap-stack-md">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center shrink-0">
+
+</div>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-stack-sm">Accademia teatrale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Utilizzo di sensori posizionati in punti strategici del bacino idrografico per la misurazione continua di parametri chimico-fisici.
+                            </p>
+</div>
+</div>
+<div class="bg-surface rounded-lg p-stack-lg border border-outline-variant/20 shadow-sm flex gap-stack-md">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center shrink-0">
+
+</div>
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-stack-sm">Insegnamento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Estrazione e analisi di campioni di terreno per determinare la concentrazione di inquinanti e la salute della flora microbica.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Section 2: Strumentazione -->
+<section class="py-section-gap px-margin-page bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="mb-stack-lg text-center max-w-2xl mx-auto">
+
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Feature Card 1 -->
+
+<!-- Feature Card 2 -->
+
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container dark:bg-surface-container-lowest text-on-secondary-container dark:text-on-surface font-body-md text-body-md font-label-caps text-label-caps rounded-t-lg mt-section-gap flat no shadows fade-in duration-500">
+<div class="w-full px-margin-page py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-on-secondary-container dark:text-on-surface font-bold">FSL Portfolio
+            </div>
+<div class="flex flex-wrap justify-center gap-stack-md">
+
+
+
+
+</div>
+
+</div>
+</footer>
+
+
+
+
+
+
+</body></html>
